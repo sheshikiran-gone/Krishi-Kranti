@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .registration-container {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .register-button {
+            background-color: #28a745; /* Green color */
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Seller Registration</h1>
+    </header>
+
+    <div class="registration-container">
+        <form>
+            <div class="form-group">
+                <label for="sellerName">Name of Seller:</label>
+                <input type="text" id="sellerName" name="sellerName" required>
+            </div>
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="cropName">Crop Name:</label>
+                <input type="text" id="cropName" name="cropName" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="text" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" name="duration" required>
+            </div>
+            <div class="form-group">
+                <label for="cropType">Crop Type:</label>
+                <select id="cropType" name="cropType" required>
+                    <option value="rabi">Rabi</option>
+                    <option value="kharif">Kharif</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <input type="text" id="region" name="region" required>
+            </div>
+            <div class="form-group">
+                <label for="pesticidesUsed">Pesticides Used:</label>
+                <input type="text" id="pesticidesUsed" name="pesticidesUsed" required>
+            </div>
+            <button type="submit" class="register-button">Register as Seller</button>
+        </form>
+    </div>
+</body>
+</html>

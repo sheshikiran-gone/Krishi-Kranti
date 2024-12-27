@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+        }
+
+        .search-input {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-label {
+            margin-right: 10px;
+        }
+
+        .search-icon {
+            margin-right: 10px;
+        }
+
+        .customer-section,
+        .product-section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px auto; /* Centering the sections */
+            border-radius: 8px;
+            max-width: 600px; /* Limiting the width for better readability */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .quantity-control {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .quantity-input {
+            width: 50px;
+            text-align: center;
+        }
+
+        .quantity-buttons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .quantity-buttons button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button-group button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Customer Page</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Products</a>
+        <a href="#">Customer</a>
+        <a href="#">Seller</a>
+    </nav>
+
+    <div class="search-bar">
+        <label class="search-label" for="searchItem">Search for the item:</label>
+        <div class="search-input">
+            <input type="text" id="searchItem" name="searchItem" placeholder="Enter item name...">
+        </div>
+        <div class="search-icon">&#128269;</div>
+    </div>
+
+    <div class="customer-section">
+        <h2>Customer Entry</h2>
+        <form>
+            <div class="form-group">
+                <label for="customerName">Name of Customer:</label>
+                <input type="text" id="customerName" name="customerName" required>
+            </div>
+            <div class="form-group">
+                <label for="customerMail">Mail:</label>
+                <input type="email" id="customerMail" name="customerMail" required>
+            </div>
+            <div class="form-group">
+                <label for="customerMobile">Mobile Number:</label>
+                <input type="tel" id="customerMobile" name="customerMobile" required>
+            </div>
+            <div class="form-group">
+                <label for="customerRegion">Region:</label>
+                <input type="text" id="customerRegion" name="customerRegion" required>
+            </div>
+            <div class="form-group">
+                <label for="customerAddress">Address:</label>
+                <input type="text" id="customerAddress" name="customerAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="customerState">State:</label>
+                <input type="text" id="customerState" name="customerState" required>
+            </div>
+            <div class="form-group">
+                <label for="customerPincode">Pincode:</label>
+                <input type="text" id="customerPincode" name="customerPincode" required>
+            </div>
+            <div class="button-group">
+                <button type="button">Add Customer</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="product-section">
+        <h2>Product Section</h2>
+        <form>
+            <div class="form-group">
+                <label for="productName">Name of Product:</label>
+                <input type="text" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Select Quantity:</label>
+                <div class="quantity-control">
+                    <input type="text" id="quantity" name="quantity" class="quantity-input" value="1" readonly>
+                    <div class="quantity-buttons">
+                        <button onclick="changeQuantity(1)">+1</button>
+                        <button onclick="changeQuantity(-1)">-1</button>
+                    </div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="button">Add Product</button>
+                <button type="button">Cancel Product</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function changeQuantity(amount) {
+            const quantityInput = document.getElementById('quantity');
+            let currentQuantity = parseInt(quantityInput.value);
+            currentQuantity += amount;
+            if (currentQuantity < 1) {
+                currentQuantity = 1;
+            }
+            quantityInput.value = currentQuantity;
+        }
+    </script>
+</body>
+</html>

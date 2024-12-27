@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Agriculture Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('your-background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-color: #f4f4f4; /* Fallback color */
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .home-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="your-logo.png" alt="Logo">
+        <h1>Your Company Name</h1>
+        <h2>Exploring Agriculture</h2>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <a href="#">Products</a>
+            <div class="dropdown-content">
+                <a href="#">Seeds</a>
+                <a href="#">Fertilizers</a>
+                <a href="#">Pesticides</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+                <a href="#">Consultancy</a>
+                <a href="#">Farm Management</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#">Govt. Schemes</a>
+            <div class="dropdown-content">
+                <a href="#">Scheme 1</a>
+                <a href="#">Scheme 2</a>
+                <a href="#">Scheme 3</a>
+                <a href="#">Scheme 4</a>
+            </div>
+        </div>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <div class="home-content">
+        <h2>Welcome to Our Agriculture Site!</h2>
+        <p>Discover the latest trends, technologies, and information in the field of agriculture. From farming practices to agricultural innovations, we've got you covered.</p>
+        <p>Explore our services and stay updated with the ever-evolving world of agriculture.</p>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Company Name. All rights reserved.
+        <!-- Add additional footer content if needed -->
+    </footer>
+</body>
+</html>

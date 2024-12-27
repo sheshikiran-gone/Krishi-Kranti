@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Schemes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .schemes-container {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .scheme-card {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .scheme-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .scheme-image {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .scheme-details {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .click-here-button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="your-logo.png" alt="Logo">
+        <h1>Your Company Name</h1>
+        <h2>My Agriculture Schemes</h2>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <a href="#">Home</a>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Login</a>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Sign Up</a>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Customer</a>
+            <div class="dropdown-content">
+                <a href="#">Dropdown 1</a>
+                <a href="#">Dropdown 2</a>
+                <a href="#">Dropdown 3</a>
+                <a href="#">Dropdown 4</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Seller</a>
+            <div class="dropdown-content">
+                <a href="#">Dropdown 1</a>
+                <a href="#">Dropdown 2</a>
+                <a href="#">Dropdown 3</a>
+                <a href="#">Dropdown 4</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Govt Schemes</a>
+            <div class="dropdown-content">
+                <a href="#">Scheme 1</a>
+                <a href="#">Scheme 2</a>
+                <a href="#">Scheme 3</a>
+                <a href="#">Scheme 4</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Others</a>
+            <div class="dropdown-content">
+                <a href="#">Dropdown 1</a>
+                <a href="#">Dropdown 2</a>
+                <a href="#">Dropdown 3</a>
+                <a href="#">Dropdown 4</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="schemes-container">
+        <!-- Scheme 1 -->
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+
+        <!-- Scheme 2 -->
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme2-image.jpg" alt="Scheme 2 Image">
+            <div class="scheme-title">Agriculture Scheme 2</div>
+            <div class="scheme-details">
+                <p>Deadline: February 15, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+
+        <!-- Scheme 3 -->
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme3-image.jpg" alt="Scheme 3 Image">
+            <div class="scheme-title">Agriculture Scheme 3</div>
+            <div class="scheme-details">
+                <p>Deadline: March 5, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+
+        <!-- Scheme 4 -->
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme4-image.jpg" alt="Scheme 4 Image">
+            <div class="scheme-title">Agriculture Scheme 4</div>
+            <div class="scheme-details">
+                <p>Deadline: April 20, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme1-image.jpg" alt="Scheme 1 Image">
+            <div class="scheme-title">Agriculture Scheme 1</div>
+            <div class="scheme-details">
+                <p>Deadline: January 30, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <!-- Scheme 2 -->
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme2-image.jpg" alt="Scheme 2 Image">
+            <div class="scheme-title">Agriculture Scheme 2</div>
+            <div class="scheme-details">
+                <p>Deadline: February 15, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+
+        <!-- Scheme 3 -->
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme3-image.jpg" alt="Scheme 3 Image">
+            <div class="scheme-title">Agriculture Scheme 3</div>
+            <div class="scheme-details">
+                <p>Deadline: March 5, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+
+        <!-- Scheme 4 -->
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme4-image.jpg" alt="Scheme 4 Image">
+            <div class="scheme-title">Agriculture Scheme 4</div>
+            <div class="scheme-details">
+                <p>Deadline: April 20, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+        <div class="scheme-card">
+            <img class="scheme-image" src="scheme4-image.jpg" alt="Scheme 4 Image">
+            <div class="scheme-title">Agriculture Scheme 4</div>
+            <div class="scheme-details">
+                <p>Deadline: April 20, 2024</p>
+                <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <a href="#" class="click-here-button">CLICK HERE for more</a>
+        </div>
+
+        <!-- Repeat similar blocks for the remaining schemes -->
+    </div>
+
+    <footer>
+        &copy; 2024 Your Company Name. All rights reserved.
+        <!-- Add additional footer content if needed -->
+    </footer>
+</body>
+</html>
